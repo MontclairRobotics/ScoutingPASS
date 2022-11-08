@@ -97,24 +97,19 @@ var config_data = `
         "title": "Lower Cargo Scored",
         "type":"counter"
       },
-      "Upper Cargo Missed": {
-        "code":"tm",
-        "title": "Uppoer Cargo Missed",
-        "type":"counter"
-      },
-      "Lower Cargo Missed": {
-        "code":"tn",
-        "title": "Lower Cargo Missed",
-        "type":"counter"
-      },
       "Was Defended": {
         "code":"wd",
         "title": "Was Defended",
         "type":"bool"
       },
-      "Cargo Loading": {
-        "code":"cl",
-        "title": "Pick up Cargo where",
+      "Wallbot?": {
+        "code":"wbt",
+        "title": "Wallbot?",
+        "type":"bool"
+      },
+      "Cargo Intake From": {
+        "code":"cif",
+        "title": "Cargo Intake From",
         "type":"radio",
         "choices":{
           "t":"Terminal<br>",
@@ -141,8 +136,8 @@ var config_data = `
           "2":"Mid<br>",
           "3":"High<br>",
           "4":"Traversal<br>",
-          "f":"Attempted but Failed<br>",
-          "x":"Not Attempted"
+          "a":"Attempted but failed<br>",
+          "x":"Not attempted"
         },
         "defaultValue":"x"
       },
@@ -175,26 +170,45 @@ var config_data = `
         "title": "Defense Rating",
         "type":"radio",
         "choices":{
-          "n":"Not Effective<br>",
+          "b":"Below Average<br>",
           "a":"Average<br>",
-          "v":"Very Effective<br>",
-          "x":"Not Observed"
+          "g":"Good<br>",
+          "e":"Excellent<br>",
+          "x":"Did not play defense"
         },
         "defaultValue":"x"
       },
-      "Died": {
+       "Strategically held enemy cargo during match?": {
+        "code":"hc",
+        "title": "Enemy Balls",
+        "type":"bool"
+      },
+       "Swerve drive?": {
+        "code":"sd",
+        "title": "Swerve drive?",
+        "type":"bool"
+      },
+       "Speed Rating": {
+        "code":"sr",
+        "title": "Speed Rating",
+        "type":"radio",
+        "choices":{
+          "1":"1 (slow)<br>",
+          "2":"2<br>",
+          "3":"3<br>",
+          "4":"4<br>",
+          "5":"5 (fast)"
+        },
+        "defaultValue":"3"
+      },
+      "Died/Tipped": {
         "code":"d",
-        "title": "Died",
+        "title": "Died/Tipped",
         "type":"bool"
       },
-      "Tipped": {
-        "code":"to",
-        "title": "Tipped Over",
-        "type":"bool"
-      },
-      "Card Foul": {
-        "code":"cf",
-        "title": "Yellow/Red Card",
+      "Make good alliance partner?": {
+        "code":"all",
+        "title": "Make good alliance partner?",
         "type":"bool"
       },
       "Comments": {
@@ -203,7 +217,18 @@ var config_data = `
         "type":"text",
         "size":15,
         "maxSize":50
-      }
+      },
+      "Confidence Rating": {
+        "code":"cnf",
+        "title": "Confidence Rating",
+        "type":"radio",
+        "choices":{
+          "v":"Very Confident<br>",
+          "a":"Average<br>",
+          "n":"Not Confident"
+      },
+       "defaultValue":"a"
+    }
     }
   }
 }`;
