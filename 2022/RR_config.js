@@ -12,7 +12,7 @@ var config_data = `
         "required":"true"
       },
       "Event":{
-        "code":"e",
+        "code":"NJSKI",
         "type":"event",
         "defaultValue":"2022 Montgomery",
         "required":"true",
