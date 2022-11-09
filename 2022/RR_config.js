@@ -14,7 +14,7 @@ var config_data = `
       "Event":{
         "code":"e",
         "type":"event",
-        "defaultValue":"2022njski",
+        "defaultValue":"2022njbre",
         "required":"true",
         "disabled":"false"
       },
