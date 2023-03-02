@@ -59,9 +59,11 @@ var config_data = `
       },
       "defaultValue":"x"
     },
-    { "name": "# of Batteries",
-      "code": "nob",
-      "type": "number"
+    { "name": "Scoring Options",
+      "code": "sco",
+      "type": "text",
+      "size": 20,
+      "maxSize": 250
     },
     { "name": "Floor pickup Cones",
       "code": "fco",
