@@ -131,7 +131,7 @@ var config_data = `
     },
     { "name": "Who Defended this bot",
       "code": "who",
-      "type": "text"
+      "type": "number"
     },
     { "name": "Smart Placement<br>(creates Links)",
       "code": "lnk",
